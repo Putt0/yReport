@@ -4,3 +4,4 @@ main: free.git.hub.yreport.ReportMain
 authors: [Re, in, al, dy, REINALDY OLIVEIRA]
 commands:
   reports:
+  report:
