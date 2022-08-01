@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/pvp53/OneDrive/Área de Trabalho/Zarpium/INICIALIZADORES/Lobby/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jose Morais/Desktop/sv/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -21,11 +21,6 @@ public class TabCompleteManager implements TabCompleter {
         Reasons.add(ReasonList.CHEATING.toString());
         Reasons.add(ReasonList.SPAM.toString());
         
-        if (cmd.getName().equalsIgnoreCase("reports")) {
-        	StringUtil.copyPartialMatches(args[0], Reasons, Completions);
-            Collections.sort(Completions);
-        }
-        
         List<String> Players = new ArrayList<>();
         for (Player player : Bukkit.getOnlinePlayers()) {
         	Players.add(player.getName());
@@ -34,6 +29,9 @@ public class TabCompleteManager implements TabCompleter {
         if (cmd.getName().equalsIgnoreCase("report")) {
         	if (args.length == 1) {
         		StringUtil.copyPartialMatches(args[0], Players, Completions);
+                Collections.sort(Completions);
+        	} else if (args.length == 2) {
+        		StringUtil.copyPartialMatches(args[1], Reasons, Completions);
                 Collections.sort(Completions);
         	}
         }
