@@ -16,13 +16,11 @@ public class ReportMain extends JavaPlugin {
 	@Override
 	public void onLoad() {
 		instance = this;
-		saveDefaultConfig();
 		System.out.println("[yReport] Loading...");
 	}
 	
 	@Override
 	public void onEnable() {
-		ReportCommon.registerListener();
 		ReportCommon.registerCommand();
 		System.out.println("[yReport] Enabled.");
 	}
