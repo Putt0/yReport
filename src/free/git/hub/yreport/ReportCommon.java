@@ -29,5 +29,8 @@ public class ReportCommon {
 		Plugin Commands = ReportMain.getInstance();
 		((JavaPlugin) Commands).getCommand("reports").setExecutor(new ReportCommand());
 		((JavaPlugin) Commands).getCommand("reports").setTabCompleter(new TabCompleteManager());
+		
+		((JavaPlugin) Commands).getCommand("report").setExecutor(new ReportCommand());
+		((JavaPlugin) Commands).getCommand("report").setTabCompleter(new TabCompleteManager());
 	}
 }
