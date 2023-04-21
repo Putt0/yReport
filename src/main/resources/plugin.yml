@@ -1,0 +1,8 @@
+name: yMotd
+version: 2.0
+main: github.com.putt0.BukkitLoader
+description: https://github.com/Putt0
+authors:
+  - Putt0
+commands:
+  report:
