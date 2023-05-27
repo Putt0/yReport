@@ -18,7 +18,6 @@ public class ReportCommand extends BukkitCommand {
         if (this.isPlayer(commandSender)) {
 
             Player player = (Player) commandSender;
-            boolean permission = player.isOp();
 
             if (command.getName().equalsIgnoreCase("report")) {
                 if (args.length == 0) {
@@ -66,7 +65,7 @@ public class ReportCommand extends BukkitCommand {
                         player.sendMessage("§2§lREPORT §aYou are reported: " + playerTarget.getName() + " in category: §c" + args[1]);
 
                         for (Player players : Bukkit.getOnlinePlayers()) {
-                            if (permission) {
+                            if (players.isOp()) {
                                 players.playSound(player.getLocation(), Sound.ANVIL_BREAK, 2.0F, 1.0F);
 
                                 TextComponent ReportC = new TextComponent("§2§lREPORT §aA new report for you!");
